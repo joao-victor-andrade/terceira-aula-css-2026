@@ -32,19 +32,19 @@ para o texto ficar legivel*/
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.55);
+    background: rgba(105, 0, 0, 0.55);
     z-index: -1;
 }
 /*====CABEÇALHO====*/
 header{
     text-align: center;
-    color: aliceblue;
+    color: rgb(151, 7, 7);
     margin-bottom: 40px;
 }
 header h1{
     font-size: 2.5rem;
     margin-bottom: 10px;
-    text-shadow: 0 2px 8px black;
+    text-shadow: 0 2px 8px rgb(71, 0, 0);
 }
 header p{
     font-size: 1.1rem;
@@ -84,16 +84,14 @@ transition: transform 0.5s ease;
     bottom: 0;
     width: 100%;
     padding: 20px;
-    color: aliceblue;
-    background: linear-gradient(to top rgba(0,0,0,0.9), transparent
-    );
+    color: rgb(253, 252, 255);
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
     /*começa deslocando para baixo e invisivel*/
     transform: translateY(60%);
     opacity: 0;
-    transition: transform 0.4s ease;
-    opacity: 0.4s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
-/*ao passar o mouse no card, o conteudo aparec*/
+/*ao passar o mouse no card, o conteudo aparece*/
 .card:hover .card-conteudo{
     transform: translateY(0);
     opacity: 1;
@@ -106,25 +104,26 @@ transition: transform 0.5s ease;
 .card-conteudo p{
     font-size: 0.9rem;
     margin-bottom: 14px;
-    opacity: 0,9;
+    opacity: 0.9;
 }
 .btn{
     display: inline-block;
     padding: 8px 19px;
-    background-color: red;
-    color: white;
+    background-color: rgb(78, 0, 0);
+    color: rgb(248, 248, 248);
     text-decoration: none;
     border-radius: 30px;
     font-size: 0.85rem;
     font-weight: bold;
-    transition: background 0.3 ease;
+    transition: background 0.3s ease;
 }
 .btn:hover{
-        background: #ff2e2e;
-/*===RESPONSIVO===*/
-@media(max-widht:600px)
+    background: #660000;
 }
-.card{
-    width: 90%;
-    height: 320px;
+/*===RESPONSIVO===*/
+@media (max-width: 600px) {
+    .card{
+        width: 90%;
+        height: 320px;
+    }
 }
